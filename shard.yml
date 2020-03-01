@@ -41,6 +41,9 @@ dependencies:
     github: amberframework/citrine-i18n
     version: ~> 0.4.0
 
+  markd:
+    github: icyleaf/markd
+
 development_dependencies:
   garnet_spec:
     github: amberframework/garnet-spec

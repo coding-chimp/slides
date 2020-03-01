@@ -1,4 +1,4 @@
 .reveal
   .slides
-    section Slide1
-    section Slide2
+    - slides.each do |slide|
+      section == slide
