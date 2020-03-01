@@ -14,6 +14,7 @@ require "./database"
 require "./initializers/**"
 
 # Start Generator Dependencies: Don't modify.
+require "../src/models/**"
 # End Generator Dependencies
 
 require "../src/controllers/application_controller"
