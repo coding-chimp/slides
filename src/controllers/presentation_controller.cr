@@ -39,7 +39,7 @@ class PresentationController < ApplicationController
     presentation.set_attributes(presentation_params.validate!)
 
     if presentation.save
-      redirect_to action: :index, flash: {"success" => "Presentation has been updated."}
+      redirect_to "/", flash: {"success" => "Presentation has been updated."}
     else
       flash[:danger] = "Could not update Presentation!"
       render "edit.slang"
@@ -50,7 +50,7 @@ class PresentationController < ApplicationController
     presentation = Presentation.find!(params[:id])
     presentation.destroy
 
-    redirect_to action: :index, flash: {"success" => "Presentation has been deleted."}
+    redirect_to "/", flash: {"success" => "Presentation has been deleted."}
   end
 
   private def presentation_params

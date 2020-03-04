@@ -1,3 +1,2 @@
-- active = context.request.path == "/" ? "active" : ""
-li.nav-item class=active
-  a.nav-link href="/" Presentations
+== navbar_item("Presentations", "/")
+== navbar_item("New", "/new")

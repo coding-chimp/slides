@@ -1,7 +1,10 @@
-$primary: #f4994b;
+@charset "utf-8";
+@import "~bulma/bulma";
 
-@import '~bootstrap/scss/bootstrap';
+.navbar {
+  padding: 0 calc(#{$block-spacing} + #{$gap});
+}
 
-.main {
-  padding-top: 20px;
+.table tr.clickable {
+  cursor: pointer;
 }
